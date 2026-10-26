@@ -1,0 +1,32 @@
+# README - AVL Tree
+
+## Aim
+This folder demonstrates insertion into an AVL tree and the balancing rotations that keep the tree height-balanced.
+
+---
+
+## Algorithm
+1. Insert each value using the binary-search-tree ordering rule.
+2. Update the height of each ancestor after insertion.
+3. Calculate each node's balance factor from its left and right subtree heights.
+4. Apply a single or double rotation when a node becomes unbalanced.
+5. Print preorder and inorder traversals, followed by the tree height.
+
+---
+
+## How it works
+An AVL tree is a binary search tree in which the heights of a node's left and right subtrees differ by at most one. The program handles the four imbalance cases (left-left, left-right, right-right, and right-left) with rotations. Duplicate values are ignored.
+
+---
+
+## Functionality
+- Insert values while maintaining AVL balance
+- Display preorder and inorder traversals
+- Report the tree height
+
+---
+
+## Time and Space Complexity
+- Insert: O(log n)
+- Preorder / inorder traversal: O(n)
+- Extra space: O(n) for tree nodes; O(log n) recursion stack for insertion and traversal

@@ -1,0 +1,32 @@
+# README - Stack Operations
+
+## Aim
+This folder demonstrates basic stack operations using an array and a linked list.
+
+---
+
+## Algorithm
+1. Initialize the stack as empty.
+2. Push each new value onto the top.
+3. Pop a value from the top, reporting when the stack is empty.
+4. Check whether the stack is empty and, in the linked-list implementation, display its values.
+
+---
+
+## How it works
+A stack follows the LIFO (Last In, First Out) principle. The last inserted element is removed first. The array implementation has a capacity of 100; in the linked-list implementation, the head acts as the top of the stack.
+
+---
+
+## Functionality
+- Push an element onto the stack
+- Pop the top element
+- Check whether the stack is empty
+- Display the contents in the linked-list implementation
+
+---
+
+## Time and Space Complexity
+- Push / Pop: O(1)
+- Display: O(n) in the linked-list implementation
+- Extra space: O(1) fixed array storage (capacity 100) or O(n) linked-list storage

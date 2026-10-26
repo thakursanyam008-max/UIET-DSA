@@ -1,0 +1,32 @@
+# README - Queue Operations
+
+## Aim
+This folder demonstrates basic queue operations using an array and a linked list.
+
+---
+
+## Algorithm
+1. Initialize the queue as empty.
+2. Enqueue new values at the rear.
+3. Dequeue values from the front; the array implementation shifts remaining values forward.
+4. Check whether the queue is empty and, in the linked-list implementation, display its values.
+
+---
+
+## How it works
+A queue follows the FIFO (First In, First Out) principle. The array implementation stores up to 100 values and shifts all remaining values on dequeue. The linked-list implementation tracks front and rear pointers, adding at the rear and removing from the front.
+
+---
+
+## Functionality
+- Enqueue and dequeue values
+- Check whether the queue is empty
+- Display the queue in the linked-list implementation
+- Report full and empty conditions in the array implementation
+
+---
+
+## Time and Space Complexity
+- Array enqueue: O(1); dequeue: O(n) due to shifting
+- Linked-list enqueue / dequeue: O(1); display: O(n)
+- Extra space: O(1) fixed array storage (capacity 100) or O(n) linked-list storage

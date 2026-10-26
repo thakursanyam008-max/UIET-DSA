@@ -1,0 +1,30 @@
+# README - Binary Tree
+
+## Aim
+This folder demonstrates creating a binary tree interactively and traversing its nodes.
+
+---
+
+## Algorithm
+1. Read the value for the current node.
+2. Ask whether the node has a left child and recursively create it when requested.
+3. Ask whether the node has a right child and recursively create it when requested.
+4. In `Traversal.cpp`, visit the created tree in preorder, inorder, and postorder.
+
+---
+
+## How it works
+Each node stores a value and pointers to its left and right children. The prompts let the user choose the tree's shape. Unlike a binary search tree, this binary tree does not impose an ordering rule on node values.
+
+---
+
+## Functionality
+- Create a binary tree by entering node values and choosing its children
+- Display preorder, inorder, and postorder traversals in `Traversal.cpp`
+
+---
+
+## Time and Space Complexity
+- Tree creation: O(n) time
+- Each traversal: O(n) time
+- Extra space: O(n) for the nodes; O(h) recursion stack, where h is the tree height

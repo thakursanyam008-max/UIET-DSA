@@ -1,0 +1,30 @@
+# README - Binary Search Tree
+
+## Aim
+This folder contains a menu-driven binary search tree program for inserting and deleting integer values.
+
+---
+
+## Algorithm
+1. Start with an empty tree.
+2. For insertion, compare the value with each visited node and descend left or right until an empty child is found.
+3. For deletion, find the node and handle the leaf, one-child, or two-child case.
+4. When deleting a node with two children, replace its value with the minimum value in its right subtree, then remove that successor.
+
+---
+
+## How it works
+A binary search tree stores smaller values in the left subtree and larger values in the right subtree. Duplicate values are not inserted. The program also uses a search routine to check whether a value exists before deleting it.
+
+---
+
+## Functionality
+- Insert a value
+- Delete a value if it exists
+- Reject duplicate values
+
+---
+
+## Time and Space Complexity
+- Insert, search, and delete: O(h), where h is the tree height (O(log n) average for a balanced tree; O(n) worst case)
+- Extra space: O(n) for the tree; O(h) recursion stack for tree operations

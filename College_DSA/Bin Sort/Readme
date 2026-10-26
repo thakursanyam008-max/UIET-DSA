@@ -1,0 +1,28 @@
+# README - Bin Sort
+
+## Aim
+This folder demonstrates sorting integers by placing values into bins, with array-based and linked-list-based implementations.
+
+---
+
+## Algorithm
+1. Find the minimum and maximum values when the implementation supports a value range.
+2. Assign each input value to its corresponding bin.
+3. Visit bins in ascending value order and write their values back to the array.
+
+---
+
+## How it works
+`Bin_Sort_array.cpp` uses a frequency array indexed by each value's offset from the minimum, so it supports negative as well as nonnegative integers. `Bin_Sort_Linked_List.cpp` creates one linked-list bin for every integer from zero through the maximum and therefore requires nonnegative input. Repeated values are retained.
+
+---
+
+## Functionality
+- Sort integer arrays in ascending order
+- Demonstrate bins stored as an array of counts or as linked lists
+
+---
+
+## Time and Space Complexity
+- Array-count version: O(n + k) time and O(k) extra space, where k is the inclusive range from the minimum to maximum
+- Linked-list version: O(n + m) time and O(m + n) extra space, where m is the maximum value plus one; this version assumes values are nonnegative

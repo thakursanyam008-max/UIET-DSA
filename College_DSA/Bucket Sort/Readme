@@ -1,0 +1,29 @@
+# README - Bucket Sort
+
+## Aim
+This folder demonstrates sorting integers with bucket sort using both arrays and linked lists.
+
+---
+
+## Algorithm
+1. Find the minimum and maximum input values.
+2. Distribute values into buckets based on their offset within that range.
+3. Sort values within each bucket.
+4. Visit buckets in order and collect their values into the sorted result.
+
+---
+
+## How it works
+`Bucket_Sort_array.cpp` creates a bucket for each integer value in the input range, then sorts each bucket before copying the values back. `Bucket_Sort_Linked_list.cpp` distributes existing list nodes among a number of buckets based on their values, inserts nodes into each bucket in sorted order, and concatenates the buckets. Both implementations support negative integers.
+
+---
+
+## Functionality
+- Sort integer data in ascending order
+- Demonstrate bucket storage using vectors or linked lists
+
+---
+
+## Time and Space Complexity
+- Array version: O(n + k) time, plus the cost of sorting within buckets; O(k + n) extra space, where k is the integer range
+- Linked-list version: O(n^2) worst-case time because sorted insertion into a bucket may scan its nodes; O(n) bucket references and no additional data nodes
